@@ -1,0 +1,21 @@
+# netlify.toml
+
+[build]
+  # Command to build your site
+  command = "npm run build"
+
+  # Directory (relative to root) that contains the deploy-ready assets
+  # SvelteKit with adapter-auto/adapter-netlify typically outputs static builds here:
+  publish = ".svelte-kit/output/static"
+
+  # Optional: Specify Node.js version for the build environment
+  # [build.environment]
+  #   NODE_VERSION = "20"
+
+# The following redirect is usually generated automatically by the adapter
+# into the publish directory (.svelte-kit/output/static/_redirects).
+# Including it here can serve as a fallback but is often redundant.
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
