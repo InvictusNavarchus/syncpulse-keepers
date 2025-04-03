@@ -5,8 +5,7 @@
   command = "npm run build"
 
   # Directory (relative to root) that contains the deploy-ready assets
-  # SvelteKit with adapter-auto/adapter-netlify typically outputs static builds here:
-  publish = ".svelte-kit/output/static"
+  publish = "build"
 
   # Optional: Specify Node.js version for the build environment
   # [build.environment]
